@@ -328,6 +328,44 @@ form{
     margin-right: 20px;
 }
 
+/* Pricing Section styles start here */
+.pricing{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.icon{
+    display: flex;
+    padding-top: 15px;
+}
+.xmark{
+    color: red;
+}
+.check{
+    color: green;
+}
+.icon i{
+    margin-right: 30px;
+    margin-left: 0;
+}
+.pricing-container{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 30px;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 70px;
+
+}
+.pricing-container h2{
+    font-size: var(--logo-font-size);
+    padding-bottom: 10px;
+} 
+.price{
+    font-size: var(--logo-font-size);
+     color: var(--orange-text-color);
+}
+
+
 /* Footer Section Styles Start here */
 .footer{
     margin-top: 58px;
@@ -336,10 +374,14 @@ form{
 }
 .footer-container{
     justify-content:  space-between;
+    
 }
 .footer-description{
     padding-top: 30px;
     line-height: 20px;
+}
+.footer-content1{
+    width: 40%;
 }
 .footer-content h4{
     color: rgba(255, 255, 255, 0.5);
@@ -361,8 +403,16 @@ form{
 /* Responsive mobile device  */
 @media screen and (max-width:576px) {
 
-    .banner, .run, .bmi-form-content, .footer-container{
+    .banner, .run, .bmi-form-content,.pricing, .footer-container{
         flex-direction: column;
+    }
+
+    .btn-banner{
+        padding: 10px 20px;
+    
+    }
+    .pricing{
+        width: 80%;
     }
     /* navbar  */
     .nav-item {
@@ -393,6 +443,9 @@ form{
 
     .habit-img, .team-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .run{
+        padding: 30px;
     }
     .run-btn{
        width: 100%;
@@ -431,6 +484,9 @@ form{
         padding-top: 20px;
         padding-bottom: 0;
     }
+    .footer-content1{
+        width: 100%;
+    }
 }
 
 /* Responsive Medium Device  */
@@ -442,9 +498,21 @@ form{
     .nav-item li{
         padding: 12px 20px;
     }
-    .banner, .bmi-form-content{
+    .banner, .bmi-form-content, .pricing{
         flex-direction: column;
 
+    }
+    .run-img img{
+      object-fit: cover;
+    
+    }
+    
+    .pricing{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .icon{
+        margin-left: 50px;
     }
     .banner-content{
         width: 100%;
@@ -472,6 +540,9 @@ form{
     }
     .bmi-form-content1, .bmi-form-content2{
         width: 100%;
+    }
+    .footer-content1{
+        width: 40%;
     }
 }
 
