@@ -197,7 +197,7 @@ header{
     margin-top: 100px;
     justify-content: space-between;
     align-items: center;
-    padding: 35px;
+    padding: 30px 32px 30px 54px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
 }
@@ -213,7 +213,8 @@ header{
 .run-img img{
     width: 100%;
     border-radius: 20px;
-    
+    object-fit: none;
+    object-position: 70%  34%;
 
 }
 
@@ -282,7 +283,8 @@ table{
 }
 
 td{
-    border: 1px solid var(--primary-text-color);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: .5;
     padding: 15px 0 15px 30px;
 }
 .bmi-form-content2{
@@ -291,32 +293,22 @@ td{
 form{
     margin-top: 30px;
 }
-input{
+.bmi-input{
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.1);
-    gap: 10px;
     border-radius: 10px;
     border: none;
     width: 45%;
-    margin-bottom: 10px;
-
+    margin-bottom: 15px;
+    margin-left: 10px;
+    color: #a09a9a;
+}
+.option{
+    background-color: #1A1A1A;
 }
 
-select{
-    padding: 15px;
-    background-color: #313131;
-    gap: 10px;
-    border-radius: 10px;
-    border: none;
-    width: 45%;
-    margin-bottom: 10px;
-    color: var(--primary-text-color);
-    opacity: .5;
-}
-
-
-.last-child{
-    width: 90%;
+.option-child{
+    width: 92%;
 }
 
 /* Team section styles start here */
@@ -405,6 +397,11 @@ select{
     .run-btn{
        width: 100%;
        margin-bottom: 30px;
+    }
+    .run-img img{
+        object-fit: cover;
+        width: 100%;
+        border-radius: 20px;
     }
     .training-img{
         grid-template-columns: 50% 50% 0%;
